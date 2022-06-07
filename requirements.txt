@@ -5,8 +5,9 @@ Flask
 Flask-Cors   
 importlib-metadata 
 itsdangerous
+gunicorn
 Jinja2   
-jobli
+jobli==1.1.0
 MarkupSafe
 numpy
 pandas
