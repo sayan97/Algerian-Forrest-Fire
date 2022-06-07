@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forrest Fire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="content" align="center">
+    <h1 style="text-align: center">Algerian Forrest Fire Classification and Regression</h1>
+
+    <div class="form" >
+        <form action="/regression" method="POST">
+            <input type="submit" value="Predict Temperature">
+        </form>
+        <br>
+        <form action="/classification" method="POST">
+            <input type="submit" value="Predict Fire">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

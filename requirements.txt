@@ -1,0 +1,16 @@
+certifi
+click
+colorama  
+Flask   
+Flask-Cors   
+importlib-metadata 
+itsdangerous
+Jinja2   
+jobli
+MarkupSafe
+numpy
+pandas
+pip
+wheel
+wincertstore
+zipp        

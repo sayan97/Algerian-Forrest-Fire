@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forrest Fire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<hr>
+<div align = "center">
+  <h4><b>Temperature Prediction</b></h4>
+        <div class="form">
+        <form action="/temperature" method="POST">
+            <input type="text" name="month" placeholder="Month" required="required" /><br>
+            <input type="text" name="RH" placeholder="RH" required="required" /><br>
+            <input type="text" name="Ws" placeholder="Ws" required="required" /><br>
+            <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
+            <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
+            <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
+            <input type="text" name="DC" placeholder="DC" required="required" /><br>
+            <input type="text" name="ISI" placeholder="IS" required="required" /><br>
+            <label for="Fire">Choose a Class for Fire</label>
+            <select id="class" name="class">
+            <option value="Fire">Fire</option>
+            <option value="Not Fire">Not Fire</option>
+            </select>
+
+            <input type="submit" value="Predict Temperature">
+        </form>
+        </div>
+</div>
+</body>
+</html>
