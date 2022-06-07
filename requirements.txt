@@ -12,6 +12,7 @@ MarkupSafe
 numpy
 pandas
 pip
+Werkzeug
 wheel
 wincertstore
 zipp        
