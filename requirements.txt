@@ -7,7 +7,7 @@ importlib-metadata
 itsdangerous
 gunicorn
 Jinja2   
-jobli==1.1.0
+joblib
 MarkupSafe
 numpy
 pandas
