@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flask_cors import cross_origin
 import pickle
+import os
 
 app = Flask(__name__)
 
@@ -88,7 +89,8 @@ def fire():
     return render_template('result.html', result=res)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True,port=os.environ['PORT'])
+
 
 
 
